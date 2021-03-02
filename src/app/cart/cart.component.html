@@ -1,0 +1,11 @@
+<div class="row">
+    <div class = "col-sm-4" *ngFor ="let t of title">
+        <div class="card border-primary mb-3" >
+            <div class="card-header">{{t.title}}</div>
+            <div class="card-body">
+              <h4 class="card-title">{{t.name}}</h4>
+              <p>Price : {{t.price}}</p>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="ondelproduct(t.title)">Delete prod</button>     
+    </div>
+</div>     
